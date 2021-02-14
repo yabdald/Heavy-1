@@ -11,23 +11,36 @@
 
 
 
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    >
     <fragment
         android:id="@+id/drivermap"
         android:name="com.example.heavy.driverMap"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="570dp"
+        android:layout_weight="1"
+        >
+
+<Button
+    android:id="@+id/goOnline"
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:layout_gravity="bottom"
+    android:layout_marginLeft="166dp"
+    android:layout_marginBottom="10dp"
+
+    android:background="@drawable/round_button"
+
+    android:text="Go"
+
+
+    />
 
     </fragment>
 
-</LinearLayout>
+
 
 
     <LinearLayout
+        android:layout_weight="0.1"
 
         android:layout_width="fill_parent"
         android:layout_height="90dp"
