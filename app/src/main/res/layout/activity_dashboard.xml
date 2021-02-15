@@ -41,7 +41,7 @@
                 android:text="Account management"
                 android:textColor="#ffff"
                 android:textStyle="normal"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -65,7 +65,7 @@
                 android:gravity="center"
                 android:text="Orders"
                 android:textColor="#ffff"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
 
@@ -93,7 +93,7 @@
                 android:gravity="center"
                 android:text="Complaints"
                 android:textColor="#ffff"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -117,7 +117,7 @@
                 android:gravity="center"
                 android:text="income"
                 android:textColor="#ffff"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
 
@@ -148,7 +148,7 @@
                 android:gravity="center"
                 android:text="Trucks"
                 android:textColor="#ffff"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
 
