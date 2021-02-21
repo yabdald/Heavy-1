@@ -1,14 +1,10 @@
 package com.example.heavy;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.graphics.Color;
-import android.os.Bundle;
 import android.widget.Button;
 
 public class main extends AppCompatActivity {
@@ -27,7 +23,7 @@ public class main extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, add_user.class);
+        Intent intent = new Intent(this, admin_add_user.class);
         startActivity(intent);
     }
 }

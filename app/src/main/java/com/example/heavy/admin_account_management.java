@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class add_user extends AppCompatActivity {
+public class admin_account_management extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_user);
+        setContentView(R.layout.activity_admin_account_management);
 
-        getSupportActionBar().setTitle("Add user");
+        getSupportActionBar().setTitle("Account management");
     }
 }

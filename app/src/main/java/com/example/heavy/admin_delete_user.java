@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class add_company extends AppCompatActivity {
+public class admin_delete_user extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_company);
+        setContentView(R.layout.activity_admin_delete_user);
+
+        getSupportActionBar().setTitle("Delete user");
     }
 }
