@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    tools:context=".admin_add_user">
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar"
+        android:layout_margin="20dp"
+        android:background="#DADDE1"
+        android:orientation="vertical">
+
+        <TableRow
+            android:background="#1687A7"
+            >
+
+            <TextView
+                android:id="@+id/userNameOfMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="Message from: haider1122"
+                android:textColor="#fff" />
+        </TableRow>
+
+        <TableRow
+            android:background="#1687A7">
+
+            <TextView
+                android:id="@+id/SubjectOfMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="17dp"
+                android:textSize="10dp"
+                android:layout_weight="1"
+                android:text="Subject: What is Lorem Ipsum?"
+                android:textColor="#fff" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/userMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="10dp"
+                android:layout_weight="1"
+                android:text="Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textColor="#000" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1687A7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+</RelativeLayout>

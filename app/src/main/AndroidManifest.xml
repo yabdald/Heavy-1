@@ -28,7 +28,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Heavy">
-        <activity android:name=".admin_view_company"></activity>
+        <activity android:name=".admin_view_messages"></activity>
+        <activity android:name=".admin_view_company" />
         <activity android:name=".admin_view_users" />
         <activity android:name=".admin_delete_company" />
         <activity android:name=".admin_edit_company" />
