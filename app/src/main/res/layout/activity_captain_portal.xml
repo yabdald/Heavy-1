@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard"
+    tools:context=".captainPortal"
     android:orientation="horizontal"
     android:background="#ffff"
 
@@ -155,7 +155,7 @@
         android:layout_marginLeft="40dp"
 
 
-        android:background="@drawable/round_button"
+
 
         android:text="pay Back To Heavy"
         android:textSize="20dp"/>
