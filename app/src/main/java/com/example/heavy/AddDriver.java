@@ -1,16 +1,19 @@
 package com.example.heavy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class add_user extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+
+
+
+public class AddDriver extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_user);
+        setContentView(R.layout.add_driver);
 
-        getSupportActionBar().setTitle("Add user");
+
     }
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffff"
-    tools:context=".add_user">
+    tools:context=".admin_add_user">
 
     <TableLayout
 
@@ -20,11 +20,40 @@
         <TableRow>
 
             <TextView
+                android:id="@+id/idLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="ID"
+                android:textColor="#1687A7" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/idInput"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
                 android:id="@+id/emailLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="47dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Email"
                 android:textColor="#1687A7" />
@@ -34,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="47dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Password"
                 android:textColor="#1687A7" />
@@ -216,7 +245,7 @@
                 android:layout_alignParentBottom="true"
                 android:background="#1687A7"
                 android:layout_margin="20dp"
-                android:text="Add"
+                android:text="Update"
                 android:textColor="#fff"
                 android:textSize="20dp" />
 

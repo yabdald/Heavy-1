@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffff"
-    tools:context=".add_user">
+    tools:context=".AddDriver">
 
     <TableLayout
 
@@ -20,146 +20,70 @@
         <TableRow>
 
             <TextView
-                android:id="@+id/idLabel"
+                android:id="@+id/userNameLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="47dp"
                 android:layout_weight="1"
-                android:text="ID"
+                android:text="User name"
                 android:textColor="#1687A7" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <EditText
-                android:id="@+id/idInput"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_border"
-                android:ems="10"
-                android:inputType="textMultiLine"
-                android:textColor="#000" />
-        </TableRow>
-
-        <TableRow>
 
             <TextView
                 android:id="@+id/emailLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="47dp"
                 android:layout_weight="1"
                 android:text="Email"
-                android:textColor="#1687A7" />
-
-            <TextView
-                android:id="@+id/PasswordLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:text="Password"
                 android:textColor="#1687A7" />
 
         </TableRow>
 
         <TableRow>
+
+            <EditText
+                android:id="@+id/userNameInput"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#000"
+                android:autofillHints="Example: Ali"
+
+                />
 
             <EditText
                 android:id="@+id/emailInput"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="2.5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="15dp"
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_border"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textColor="#000" />
-
-            <EditText
-                android:id="@+id/passwordInput"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginLeft="2.5dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_border"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:textColor="#000" />
+                android:textColor="#000"
+                android:autofillHints="+9665XXXXXXXX"
+                />
         </TableRow>
 
 
         <TableRow>
 
             <TextView
-                android:id="@+id/phoneNumberLabel"
+                android:id="@+id/PasswordLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:text="Phone number"
-                android:textColor="#1687A7" />
-
-            <TextView
-                android:id="@+id/commercialLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:text="Commercial record"
-                android:textColor="#1687A7" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <EditText
-                android:id="@+id/phoneNumberInput"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="2.5dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_border"
-                android:ems="10"
-                android:inputType="number"
-                android:textColor="#000" />
-
-
-            <EditText
-                android:id="@+id/commercialInput"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginLeft="2.5dp"
-                android:layout_marginRight="15dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text_border"
-                android:ems="10"
-                android:inputType="text"
-                android:textColor="#000" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:id="@+id/companyNameLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:text="Company name"
+                android:text="Password"
                 android:textColor="#1687A7" />
 
             <TextView
@@ -177,7 +101,7 @@
         <TableRow>
 
             <EditText
-                android:id="@+id/companyNameInput"
+                android:id="@+id/passwordInput"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
@@ -185,8 +109,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_border"
                 android:ems="10"
-                android:inputType="text"
-                android:textColor="#000" />
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:autofillHints="Example: "/>
 
 
             <EditText
@@ -205,13 +130,23 @@
         <TableRow>
 
             <TextView
-                android:id="@+id/servicesLabel"
+                android:id="@+id/phoneNumberLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:text="Services"
+                android:text="Phone number"
+                android:textColor="#1687A7" />
+
+            <TextView
+                android:id="@+id/dayOfBirthLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Day of birth"
                 android:textColor="#1687A7" />
 
         </TableRow>
@@ -219,7 +154,50 @@
         <TableRow>
 
             <EditText
-                android:id="@+id/servicesInput"
+                android:id="@+id/phoneNumberInput"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColor="#000" />
+
+
+            <EditText
+                android:id="@+id/dayOfBirthInput"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="date"
+                android:textColor="#000" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Role"
+                android:textColor="#1687A7" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/Role"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
@@ -227,10 +205,12 @@
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_border"
                 android:ems="10"
-                android:inputType="textMultiLine"
+                android:inputType="phone"
                 android:textColor="#000" />
-        </TableRow>
 
+
+
+        </TableRow>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -245,7 +225,7 @@
                 android:layout_alignParentBottom="true"
                 android:background="#1687A7"
                 android:layout_margin="20dp"
-                android:text="Update"
+                android:text="Add"
                 android:textColor="#fff"
                 android:textSize="20dp" />
 

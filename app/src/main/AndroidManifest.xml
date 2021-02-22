@@ -28,7 +28,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Heavy">
-        <activity android:name=".add_user"></activity>
+        <activity android:name=".delete_company"></activity>
+        <activity android:name=".edit_company" />
+        <activity android:name=".add_company" />
+        <activity android:name=".company" />
+        <activity android:name=".users" />
+        <activity android:name=".account_management" />
+        <activity android:name=".delete_user" />
+        <activity android:name=".edit_user" />
+        <activity android:name=".add_user" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
