@@ -28,15 +28,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Heavy">
-        <activity android:name=".delete_company"></activity>
-        <activity android:name=".edit_company" />
-        <activity android:name=".add_company" />
-        <activity android:name=".company" />
-        <activity android:name=".users" />
-        <activity android:name=".account_management" />
-        <activity android:name=".delete_user" />
-        <activity android:name=".edit_user" />
-        <activity android:name=".add_user" />
+        <activity android:name=".admin_delete_company"></activity>
+        <activity android:name=".admin_edit_company" />
+        <activity android:name=".admin_add_company" />
+        <activity android:name=".admin_view_company" />
+        <activity android:name=".admin_company" />
+        <activity android:name=".admin_users" />
+        <activity android:name=".admin_account_management" />
+        <activity android:name=".admin_delete_user" />
+        <activity android:name=".admin_edit_user" />
+        <activity android:name=".admin_add_user" />
+        <activity android:name=".admin_view_users" />
+        <activity android:name=".admin_complaints" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -52,7 +55,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard" />
+        <activity android:name=".admin_dashboard" />
         <activity android:name=".main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -9,155 +9,165 @@
     android:background="#ffff"
     >
 
-<TableLayout
-    android:id="@+id/tableLayout"
-    android:layout_marginTop="15dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TableRow
+        <TableRow
 
-        >
-
-        <LinearLayout
-            android:layout_width="191dp"
-            android:layout_height="151dp"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#1687A7"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="87dp"
-                android:src="@drawable/account_management" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginBottom="10dp"
-                android:gravity="center"
-                android:text="Account management"
-                android:textColor="#ffff"
-                android:textStyle="normal"
-                android:textSize="20dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="171dp"
-            android:layout_height="152dp"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#1687A7"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="87dp"
-                android:src="@drawable/product" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:gravity="center"
-                android:text="Orders"
-                android:textColor="#ffff"
-                android:textSize="20dp" />
-        </LinearLayout>
-
-
-    </TableRow>
-    <TableRow>
-
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="152dp"
-            android:layout_weight="1"
-            android:background="#1687A7"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="87dp"
-                android:src="@drawable/complaints" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+            <LinearLayout
+                android:id="@+id/admin_accountManagement"
+                android:layout_width="171dp"
+                android:layout_height="151dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#1687A7"
                 android:gravity="center"
-                android:text="Complaints"
-                android:textColor="#ffff"
-                android:textSize="20dp" />
-        </LinearLayout>
+                android:onClick="onClick"
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="152dp"
-            android:layout_weight="1"
-            android:background="#1687A7"
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="87dp"
+                    android:src="@drawable/account_management" />
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="87dp"
-                android:src="@drawable/income" />
+                <TextView
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Account management"
+                    android:textColor="#ffff"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
+            <LinearLayout
+                android:id="@+id/admin_orders"
+                android:layout_width="171dp"
+                android:layout_height="152dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="#1687A7"
                 android:gravity="center"
-                android:text="income"
-                android:textColor="#ffff"
-                android:textSize="20dp" />
-        </LinearLayout>
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="87dp"
+                    android:src="@drawable/product" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Orders"
+                    android:textColor="#ffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
 
 
-    </TableRow>
+        </TableRow>
 
-    <TableRow
-        android:layout_width="370dp"
-        android:layout_height="145dp">
+        <TableRow android:layout_height="173dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="152dp"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#1687A7"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="87dp"
-                android:src="@drawable/trucks" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+            <LinearLayout
+                android:id="@+id/admin_complaints"
+                android:layout_width="171dp"
+                android:layout_height="151dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#1687A7"
                 android:gravity="center"
-                android:text="Trucks"
-                android:textColor="#ffff"
-                android:textSize="20dp" />
-        </LinearLayout>
+                android:onClick="onClick"
+                android:orientation="vertical">
 
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="87dp"
+                    android:src="@drawable/complaints" />
 
-    </TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Complaints"
+                    android:textColor="#ffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/admin_Incomes"
+                android:layout_width="171dp"
+                android:layout_height="152dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#1687A7"
+                android:gravity="center"
+                android:orientation="vertical">
 
-</TableLayout>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="87dp"
+                    android:src="@drawable/income" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Incomes"
+                    android:textColor="#ffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow  android:layout_height="173dp">
+            <LinearLayout
+                android:id="@+id/admin_Trucks"
+                android:layout_width="171dp"
+                android:layout_height="151dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#1687A7"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="87dp"
+                    android:src="@drawable/truck_icone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Trucks"
+                    android:textColor="#ffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
 
     <LinearLayout
+        android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="68dp"
         android:layout_alignParentBottom="true"

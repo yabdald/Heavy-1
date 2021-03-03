@@ -9,58 +9,77 @@
     android:background="#ffff"
     >
 
-    <LinearLayout
-        android:layout_width="181dp"
-        android:layout_height="151dp"
-        android:layout_margin="20dp"
-        android:layout_weight="1"
-        android:background="#1687A7"
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_alignParentLeft="true"
-        android:gravity="center"
-        android:orientation="vertical">
+        >
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="87dp"
-            android:src="@drawable/view_user" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="Users"
-            android:textColor="#ffff"
-            android:textSize="20dp"
-            android:textStyle="normal" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/admin_accountManagement_user"
+                android:layout_width="171dp"
+                android:layout_height="151dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#1687A7"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="181dp"
-        android:layout_height="152dp"
-        android:layout_margin="20dp"
-        android:layout_weight="1"
-        android:background="#1687A7"
-        android:layout_centerInParent="true"
-        android:layout_alignParentRight="true"
-        android:gravity="center"
-        android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="87dp"
+                    android:src="@drawable/view_user" />
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="87dp"
-            android:src="@drawable/view_user" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Users"
+                    android:textColor="#ffff"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="Company"
-            android:textColor="#ffff"
-            android:textSize="20dp" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/admin_accountManagement_company"
+                android:layout_width="171dp"
+                android:layout_height="152dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="#1687A7"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="87dp"
+                    android:src="@drawable/view_user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Company"
+                    android:textColor="#ffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"

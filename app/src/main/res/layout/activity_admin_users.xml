@@ -21,7 +21,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/delete_user"
+                android:id="@+id/admin_delete_user"
                 android:layout_width="171dp"
                 android:layout_height="151dp"
                 android:layout_marginLeft="20dp"
@@ -29,6 +29,7 @@
                 android:layout_weight="1"
                 android:background="#1687A7"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:orientation="vertical">
 
                 <ImageView
@@ -48,7 +49,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/add_user"
+                android:id="@+id/admin_add_user"
                 android:layout_width="171dp"
                 android:layout_height="152dp"
                 android:layout_marginLeft="5dp"
@@ -56,6 +57,7 @@
                 android:layout_weight="1"
                 android:background="#1687A7"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:orientation="vertical">
 
                 <ImageView
@@ -79,15 +81,16 @@
         <TableRow android:layout_height="173dp">
 
             <LinearLayout
-                android:id="@+id/edit_user"
+                android:id="@+id/admin_edit_user"
                 android:layout_width="171dp"
                 android:layout_height="151dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="5dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:background="#1687A7"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:orientation="vertical">
 
                 <ImageView
@@ -106,15 +109,16 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/view_user"
+                android:id="@+id/admin_view_user"
                 android:layout_width="171dp"
                 android:layout_height="152dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="#1687A7"
                 android:gravity="center"
+                android:onClick="onClick"
                 android:orientation="vertical">
 
                 <ImageView
