@@ -18,6 +18,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class driverMap extends Fragment {
 
+
     private OnMapReadyCallback callback = new OnMapReadyCallback() {
 
         /**
