@@ -9,21 +9,21 @@ import android.widget.Button;
 
 public class main extends AppCompatActivity {
 
-    Button loginbtn;
+    Button loginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        loginbtn = (Button) findViewById(R.id.loginbtn);
+        loginBtn = (Button) findViewById(R.id.loginBtn);
 
 
         getSupportActionBar().setTitle("Login");
     }
 
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, admin_add_user.class);
+        Intent intent = new Intent(this, admin_dashboard.class);
         startActivity(intent);
     }
 }
