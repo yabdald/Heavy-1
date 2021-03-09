@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CompanyHomePage">
+    tools:context=".CompanyHomePage"><![CDATA[
 
     >
 
+    ]]>
+
     <LinearLayout
-        android:id="@+id/linearLayout7"
+        android:id="@+id/LayoutIncomes"
         android:layout_width="349dp"
         android:layout_height="138dp"
         android:layout_margin="20dp"
@@ -20,16 +21,16 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717">
+        app:layout_constraintTop_toBottomOf="@+id/LayoutTrucks"
+        app:layout_constraintVertical_bias="0.174">
 
         <ImageView
             android:layout_width="79dp"
             android:layout_height="80dp"
-            android:src="@drawable/account_management"
-            app:srcCompat="@drawable/income" />
+            android:src="@drawable/income"
+             />
 
         <TextView
             android:layout_width="122dp"
@@ -44,7 +45,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/LayoutAddDriver"
         android:layout_width="170dp"
         android:layout_height="146dp"
         android:layout_margin="20dp"
@@ -52,51 +53,52 @@
         android:background="#1687A7"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/LayoutOrders"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.097">
+        app:layout_constraintVertical_bias="0.479">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="87dp"
-            android:src="@drawable/account_management"
-            app:srcCompat="@drawable/add_user" />
+            android:layout_width="170dp"
+            android:layout_height="76dp"
+            android:src="@drawable/add_user"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:text="Add User"
+            android:text="Add Driver"
             android:textColor="#ffff"
             android:textSize="25dp"
             android:textStyle="normal" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/LayoutMangeDriver"
         android:layout_width="170dp"
         android:layout_height="146dp"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="#1687A7"
         android:gravity="center"
-        android:orientation="vertical"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/LayoutTrucks"
+        app:layout_constraintEnd_toStartOf="@+id/LayoutAddDriver"
+        app:layout_constraintHorizontal_bias="0.71"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.097">
+        app:layout_constraintVertical_bias="0.463">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="91dp"
+            android:layout_width="170dp"
+            android:layout_height="74dp"
             android:src="@drawable/account_management"
-            app:srcCompat="@drawable/account_management" />
+           />
 
         <TextView
             android:layout_width="wrap_content"
@@ -110,7 +112,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout10"
+        android:id="@+id/LayoutOrders"
         android:layout_width="170dp"
         android:layout_height="141dp"
         android:layout_margin="20dp"
@@ -120,43 +122,44 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404">
+        app:layout_constraintVertical_bias="0.393">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="87dp"
-            android:src="@drawable/account_management"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
             app:srcCompat="@drawable/product" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="Orders"
-            android:textColor="#ffff"
-            android:textSize="25dp"
-            android:textStyle="normal" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
     </LinearLayout>
 
     <LinearLayout
 
-        android:layout_width="fill_parent"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
         android:layout_height="90dp"
+
         android:layout_gravity="bottom"
-
         android:background="#1687A7"
-        android:gravity="left"
 
+        android:gravity="left"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutIncomes"
         app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/homeIcon"
@@ -176,27 +179,28 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="170dp"
-        android:layout_height="146dp"
+        android:id="@+id/LayoutTrucks"
+        android:layout_width="172dp"
+        android:layout_height="140dp"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="#1687A7"
         android:gravity="center"
-        android:orientation="vertical"
 
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/LayoutOrders"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405">
+        app:layout_constraintVertical_bias="0.403">
 
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="match_parent"
-            android:layout_height="91dp"
-            android:src="@drawable/account_management"
-            app:srcCompat="@drawable/trucks" />
+            android:layout_height="69dp"
+            android:src="@drawable/trucks"
+           />
 
         <TextView
             android:layout_width="wrap_content"
@@ -208,5 +212,6 @@
             android:textSize="25dp"
             android:textStyle="normal" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
