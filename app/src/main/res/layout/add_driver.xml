@@ -223,8 +223,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
                 android:background="#1687A7"
-                android:layout_margin="20dp"
+                android:onClick="addBtn"
                 android:text="Add"
                 android:textColor="#fff"
                 android:textSize="20dp" />

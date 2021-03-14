@@ -221,7 +221,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="253dp"
 
             >
 
@@ -230,11 +230,12 @@
                 android:layout_width="254dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginLeft="62.5dp"
                 android:layout_centerHorizontal="true"
+                android:layout_marginLeft="62.5dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="28dp"
                 android:background="#1687A7"
+                android:onClick="DeleteBtn"
                 android:text="Delete Driver "
                 android:textColor="#fff"
                 android:textSize="20dp" />
@@ -244,32 +245,32 @@
                 android:layout_width="254dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="62.5dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="111dp"
-                android:layout_marginLeft="62.5dp"
-                android:layout_centerHorizontal="true"
                 android:background="#1687A7"
+                android:onClick="suspendBtn"
                 android:text="Suspend Driver "
                 android:textColor="#fff"
-                android:textSize="20dp"
 
-                />
+                android:textSize="20dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/UpdateBtn"
                 android:layout_width="254dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="62.5dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="190dp"
-                android:layout_marginLeft="62.5dp"
-                android:layout_centerHorizontal="true"
                 android:background="#1687A7"
+                android:onClick="UpdateBtn"
                 android:text="Update"
                 android:textColor="#fff"
-                android:textSize="20dp"
 
-                />
+                android:textSize="20dp" />
 
         </RelativeLayout>
 
