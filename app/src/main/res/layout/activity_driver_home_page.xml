@@ -12,14 +12,35 @@
 
 
     <fragment
-        android:id="@+id/drivermap"
-        android:name="com.example.heavy.driverMap"
+        android:id="@+id/driverMap"
+        android:name="com.example.heavy.drivarMaps"
         android:layout_width="fill_parent"
         android:layout_height="570dp"
         android:layout_weight="1"
         >
 
+        <Button
+            android:onClick="onClick"
+
+            android:id="@+id/goOffline"
+            android:text="Off"
+            android:drawableRight="@drawable/x_icone"
+            android:textColor="@color/white"
+
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="166dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="10dp"
+
+            android:background="#878180" />
+
 <Button
+
+    android:onClick="onClick"
+
     android:id="@+id/goOnline"
     android:layout_width="55dp"
     android:layout_height="55dp"
@@ -27,14 +48,21 @@
     android:layout_marginLeft="166dp"
     android:layout_marginBottom="10dp"
 
+
+
     android:background="@drawable/round_button"
 
-    android:text="Go"
+    android:text="Go"/>
 
 
-    />
+
+
 
     </fragment>
+
+
+
+
 
 
 

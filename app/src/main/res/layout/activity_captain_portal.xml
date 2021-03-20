@@ -147,7 +147,7 @@
 
 
     <Button
-        android:id="@+id/goOnline"
+        android:id="@+id/payBack"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
