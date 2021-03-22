@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main"
+    tools:context=".loginActivity"
     android:orientation="horizontal"
     android:background="#ffff"
     >
@@ -134,14 +134,14 @@
           android:textColor="#1687A7" />
 
       <androidx.appcompat.widget.AppCompatButton
-          android:id="@+id/loginBtn"
+          android:id="@+id/login"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_above="@+id/dontHaveAccount"
           android:layout_centerInParent="true"
           android:layout_marginRight="50dp"
           android:background="#1687A7"
-          android:onClick="sendMessage"
+
           android:text="Login"
           android:textColor="#fff"
           android:textSize="20dp" />
